@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: radial-gradient(circle, skyblue, steelblue);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* 3C3C97 */
+
+.left-menu {
+    width: 270px;
+    height: 100%;
+    position: absolute;
+    position: fixed;
+    background: #63D188;
+
+    justify-content: center;
+    text-align: center;
+} 
+
+.personal-data, .my-games, .storage, .to-do {
+    padding: 15px;
+    font-family: 'Bebas Neue', cursive;
+    border: 2px solid black;
+
+    margin: 2px;
+    padding: 2px;
+}
+
+.personal-data a:hover {
+    color: white;
+    transition: 0.5s;
+}
+
+.my-games a:hover {
+    color: white;
+    transition: 0.5s;
+}
+
+.storage a:hover{
+    color: white;
+    transition: 0.5s;
+}
+
+.to-do a:hover {
+    color: white;
+    transition: 0.5s;
+}
+
+
+/* personal-data */
+
+.name, .age, .city {
+    font-family: 'Bebas Neue', cursive;
+    width: 50%;
+    margin: 10px;
+}
+
+.btn-game {
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 20px;
+    padding: 10px 30px;
+    position: relative;
+    border: 2px solid black;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    transition: .4s;
+  }
+  .btn-game:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    border: 2px solid rgba(0, 0, 0, 0);
+    transition: .4s;
+  }
+  .btn-game:hover:after {
+    border-color: black;
+    width: calc(100% - 10px);
+    height: calc(100% + 10px);
+  }
+
+
+  @media screen and (max-width: 808px) {
+    .left-menu {
+        width: 100px;
+        height: 100%;
+        position: absolute;
+        position: fixed;
+        background: #63D188;
+    
+        justify-content: center;
+        text-align: center;
+    } 
+
+    .footer-menu {
+        transform: rotate(90deg);
+        transform-origin: top left;
+        margin-left: 5rem;
+        color: #852c98;
+    }
+
+    .name, .age, .city {
+        font-family: 'Bebas Neue', cursive;
+        width: 50%;
+        margin: -2px;
+        padding-left: 155px;
+    }
+} 
